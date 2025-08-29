@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniHub Edu</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav class="navbar">
+                <div class="logo">UniHub Edu</div>
+                <ul class="nav-links">
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="hero">
+            <div class="hero-content">
+                <h1>UniHub <span>Edu</span></h1>
+                <p class="subtitle">Conectando estudantes a um universo de possibilidades educacionais</p>
+                <p class="description">
+                    Uma plataforma inovadora que facilita o acesso a recursos educacionais, 
+                    conecta comunidades de aprendizado e transforma a experiência acadêmica.
+                </p>
+                <button id="login-btn" class="btn-primary">Entrar na Plataforma</button>
+            </div>
+            <div class="hero-image">
+                <div class="circle"></div>
+                <div class="square"></div>
+                <div class="triangle"></div>
+            </div>
+        </main>
+
+        <div id="login-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h2>Login</h2>
+                <form id="login-form">
+                    <div class="form-group">
+                        <label for="username">Usuário</label>
+                        <input type="text" id="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Senha</label>
+                        <input type="password" id="password" required>
+                    </div>
+                    <button type="submit" class="btn-primary">Entrar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 UniHub Edu. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
