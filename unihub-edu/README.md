@@ -29,28 +29,49 @@ Este projeto consiste em uma landing page com design moderno e minimalista, insp
 ```
 unihub-edu/
 │
-├── index.html       # Página principal
-├── style.css        # Estilos e layout responsivo
-├── script.js        # Funcionalidades JavaScript
-└── README.md        # Documentação do projeto
+├── assets/                  # Pasta para recursos estáticos
+│   ├── css/                 # Estilos CSS
+│   │   ├── style.css        # Estilos principais
+│   │   └── pages.css        # Estilos específicos para páginas internas
+│   │
+│   ├── js/                  # Scripts JavaScript
+│   │   ├── script.js        # Script principal
+│   │   └── contact.js       # Script para página de contato
+│   │
+│   └── images/              # Imagens do projeto
+│       ├── backgrounds/     # Imagens de fundo
+│       └── icons/           # Ícones
+│
+├── pages/                   # Páginas adicionais
+│   ├── sobre.html           # Página Sobre
+│   └── contato.html         # Página Contato
+│
+├── index.html               # Página principal
+└── README.md                # Documentação do projeto
 ```
 
 ## Como Executar
 
 1. Clone este repositório ou baixe os arquivos
 2. Abra o arquivo `index.html` em qualquer navegador web moderno
-3. Para testar o login, clique no botão "Entrar na Plataforma" e preencha o formulário
+3. Navegue pelo site utilizando o menu de navegação
+4. Para testar o login, clique no botão "Entrar na Plataforma" e preencha o formulário
+5. Explore as páginas "Sobre" e "Contato" para ver mais conteúdo
+6. Na página de contato, teste o formulário para ver a mensagem de confirmação
 
 ## Funcionalidades
 
-- **Navegação**: Menu de navegação com links para diferentes seções
+- **Navegação**: Menu de navegação com links para diferentes páginas
 - **Login Modal**: Modal interativo que aparece ao clicar no botão de login
 - **Mensagem de Boas-vindas**: Após o login, exibe uma mensagem personalizada de boas-vindas
 - **Elementos Decorativos**: Formas geométricas que se movem sutilmente com o cursor
+- **Página Sobre**: Informações detalhadas sobre a missão e valores do projeto
+- **Página de Contato**: Formulário de contato funcional com validação e feedback
+- **Layout Responsivo**: Design adaptável a diferentes tamanhos de tela
 
 ## Personalização
 
-O projeto utiliza variáveis CSS que podem ser facilmente modificadas no arquivo `style.css`:
+O projeto utiliza variáveis CSS que podem ser facilmente modificadas no arquivo `assets/css/style.css`:
 
 ```css
 :root {

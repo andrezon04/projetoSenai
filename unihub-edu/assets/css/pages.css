@@ -1,0 +1,84 @@
+/* Estilos para páginas internas */
+.page-content {
+    padding: 3rem 0;
+    min-height: 70vh;
+}
+
+.page-content h1 {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.about-section {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-section h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.values-list {
+    list-style: none;
+    margin: 1rem 0;
+    padding-left: 1rem;
+}
+
+.values-list li {
+    margin-bottom: 1rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.values-list li::before {
+    content: '•';
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+}
+
+/* Estilos da página de contato */
+.contact-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.contact-info, .contact-form {
+    flex: 1 1 400px;
+}
+
+.contact-details {
+    margin-top: 2rem;
+}
+
+.contact-item {
+    margin-bottom: 1.5rem;
+}
+
+.contact-item h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+/* Formulário de contato */
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: 'Inter', sans-serif;
+    resize: vertical;
+    transition: var(--transition);
+}
+
+textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(108, 99, 255, 0.2);
+}
